@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+    font-size: $global-font-size;
+    @include breakpoint(60em) {
+        font-size: 15px;
+    }
+    @include breakpoint(80em) {
+        font-size: 16px;
+    }
+    @include breakpoint(120em) {
+        font-size: 17px;
+    }
+}
+
+// Set box-sizing globally to handle padding and border widths
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+    color: $black;
+    font-family: $fontsans;
+    font-weight: $fw-normal;
+    line-height: 1.6;
+
+    -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+    -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+
+}
+
+
+img {
+    // Get rid of gap under images by making them display: inline-block; by default
+    display: inline-block;
+    vertical-align: middle;
+
+    // Grid defaults to get images and embeds to work properly
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+  }
+  
+.screen-reader, .screen-reader-text {
+    position: absolute!important;
+    clip: rect(1px,1px,1px,1px);
+}
+
+input[type="email"], input[type="text"], input[type="search"] {
+    appearance: none;
+    border-radius: 1.5rem;
+    border:1px solid $black;
+    background-color: $white;
+    outline: none;
+    font-size:.875rem;
+    padding:.875rem 1.5rem;
+    line-height: 1;
+    min-width:22em;
+    &:focus {
+        // border-color: $color-blue;
+    }
+}

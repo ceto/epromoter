@@ -1,0 +1,18 @@
+.siteheader {
+    padding-top: calc(2vw + .5rem);
+    padding-bottom: calc(2vw + .5rem);
+    // background-color: $color-db1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &__navblock {
+        //margin-left:auto;
+    }
+}
+
+.sitelogo {
+display: block;
+   max-width: calc(6rem + 4.5vw);
+
+}

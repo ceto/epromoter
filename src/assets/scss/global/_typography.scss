@@ -1,0 +1,52 @@
+h1,h2,h3,h4,h5,h6 {
+    font-family: $fontsans;
+    font-weight: $fw-bold;
+    line-height: 1.4;
+}
+
+h2 {
+    font-size:2rem;
+    @include breakpoint(768px) {
+        font-size:2.5rem;
+    }
+}
+p {
+    margin:0 0 1em;
+}
+
+a {
+    color: inherit;
+    &:hover, &:focus {
+        // color: $color-blue;
+    }
+}
+
+.contacts {
+    > p {
+        position: relative;
+        padding-left: 3rem;
+        //text-indent: -3rem;
+        .icon {
+            font-size: 1.666em;
+            position: absolute;
+            width: 2rem;
+            margin-left: -3rem;
+            //margin-top: -.125rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+p.attribution {
+    a {
+        text-decoration: none;
+        font-weight: $fw-bold;
+        // color:$color-blue;
+        &:hover,&:focus {
+            text-decoration: underline;
+        }
+    }
+}

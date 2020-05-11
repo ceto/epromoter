@@ -1,153 +1,137 @@
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
+
+    <section class="home__intro pagewrap">
+        <div class="hero">
+            <img src="{{root}}assets/img/heroill.png" alt="ePromóter - értékesítő minden látogató mellé">
+            <h1>ePromóter</h1>
+            <p>Állíts értékesítőt minden látogató mellé a weboldaladon!</p>
         </div>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
-
-          <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                    <span class="input-group-label">.com</span>
-                  </div>
+    </section>
+    <section id="home__chat" class="home__chat pagewrap">
+        <ul class="chatlist">
+            <li>
+                <div class="chatcard">
+                    <p>Biztosan te is érzed, hogy weboldalad forgalmából több üzletet is ki lehetne hozni.</p>
                 </div>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
-              </div>
-            </div>
-          </form>
+            </li>
+            <li>
+                <div class="chatcard">
+                    <p>De hogyan?</p>
+                    <p>Nem lehet minden látogató mellé értékesítőt tenni!</p>
+                </div>
+            </li>
+            <li>
+                <div class="chatcard">
+                    <p>De igen, lehet!</p>
+                </div>
+            </li>
+            <li>
+                <div class="chatcard">
+                    <p>Van személyes értékesítési tudás a cégben? Itt az ideje, digitalizálni azt!</p>
+                    <p><strong>Lépj velünk kapcsolatba!</strong></p>
+                    <p><a class="btn" href="#">Kapcsolat</a></p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="home__details details pagewrap">
+        <header class="details__head"><h2>Hogyan növeli a konverziót az <span>ePromoter?</span></h2></header>
+        <div class="details__content">
+            <ul class="bulletlist">
+                <li>Pro-aktívan megszólítja a látogatót</li>
+                <li>A látogató érdeklődésének megfelelő témát kezdeményez</li>
+                <li>Egyedi ajánlatot vagy kupont is ad</li>
+                <li>Több csatornán (Viber, Messenger stb.)  keresztül is tudja az ügyfeleket ajánlatokkal bombázni</li>
+                <li>Igény esetén az automatikus beszélgetés élő ügyfélszolgálatra is átkapcsolható</li>
+            </ul>
         </div>
+        <figure class="details__ill">
+            <img src="{{root}}assets/img/illustration-stay-productive.png" alt="Hogyan növeli a konverziót illustration">
+        </figure>
+    </section>
 
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="button">Simple Button</a><br/>
-            <a href="#" class="success button">Success Btn</a><br/>
-            <a href="#" class="alert button">Alert Btn</a><br/>
-            <a href="#" class="secondary button">Secondary Btn</a></p>
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="https://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
-          </div>
+    <section id="home__features" class="home__features pagewrap">
+        <ul class="featurelist">
+            <li>
+                <div class="featcard">
+                    <img src="{{roots}}assets/img/icon-access-anywhere.svg" alt="">
+                    <p><strong>4</strong><br />országban</p>
+                </div>
+            </li>
+            <li>
+                <div class="featcard">
+                    <img src="{{roots}}assets/img/icon-security.svg" alt="">
+                    <p>több, mint<br /><strong>100 000</strong><br />értékesítési beszélgetés</p>
+                </div>
+            </li>
+            <li>
+                <div class="featcard">
+                    <img src="{{roots}}assets/img/icon-collaboration.svg" alt="">
+                    <p>a weboldal látogatók szerint<br /><strong>5-ből 4,2-es</strong><br />minősítésű szolgáltatás</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="home__outro details pagewrap">
+        <header class="details__head">
+            <h2>Kérj egy bemutatkozó prezit tőlünk!</h2>
+            <p>Személyesen vagy webinar formájában ezekről lesz szó:</p>
+        </header>
+        <div class="details__content">
+            <ul class="bulletlist">
+                <li>Mik a sikeres projektek titkai?</li>
+                <li>Milyen üzleti hatás várható el egy ilyen projekttől?</li>
+                <li>Milyen speciális funkciók vannak?</li>
+                <li>Konkrét eredmény számok konkrét projektről?</li>
+            </ul>
         </div>
-      </div>
-    </div>
+        <footer class="details__foot">
+            <p>Vedd fel velünk a kapcsolatot most minden kötelezettség nélkül!</p>
+        </footer>
+    </section>
+
+    <section id="home__testimonials" class="home__testimonials pagewrap">
+        <ul class="testilist">
+            <li>
+                <blockquote class="testicard">
+                    <p>Fylo ipsum longer text. has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                    <cite>
+                        <img src="{{root}}assets/img/profile-1.jpg" alt="">
+                        Satish Patel
+                        <span>Founder & CEO, Huddle</span>
+                    </cite>
+                </blockquote>
+            </li>
+            <li>
+                <blockquote class="testicard">
+                    <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine. Lorem ipsum longer text.</p>
+                    <cite>
+                        <img src="{{root}}assets/img/profile-2.jpg" alt="">
+                        Bruce McKenzie
+                        <span>Founder & CEO, Lorem</span>
+                    </cite>
+                </blockquote>
+            </li>
+            <li>
+                <blockquote class="testicard">
+                    <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                    <cite>
+                        <img src="{{root}}assets/img/profile-3.jpg" alt="">
+                        Iva Boyd
+                        <span>Owner, Huddle Ltd.</span>
+                    </cite>
+                </blockquote>
+            </li>
+        </ul>
+
+    </section>
+    <section id="home__cta" class="home__cta pagewrap">
+        <div class="callout">
+            <h2>Get early access today</h2>
+            <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+            <form action="#">
+                <input type="email" placeholder="email@example.com">
+                <button type="submit" class="btn">Get Started For Free</button>
+            </form>
+        </div>
+    </section>
