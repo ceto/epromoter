@@ -21,16 +21,28 @@ html {
 
 
 body {
+    position: relative;
     margin: 0;
     padding: 0;
-    background-color: $white;
-    color: $black;
+    color:$white;
     font-family: $fontsans;
     font-weight: $fw-normal;
-    line-height: 1.6;
+    line-height: 1.4;
 
     -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
     -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+    
+    &:before {
+        content: '';
+        display: block;
+        position: fixed;
+        z-index: -1;
+        top:0; left:0;
+        width: 100%;
+        height: 100%;
+        background-color: $cl-secondary;
+        background-image: linear-gradient(180deg, $cl-secondary 10%, darken($cl-secondary,10%) 90%);
+    }
 
 }
 
@@ -44,6 +56,7 @@ img {
     max-width: 100%;
     height: auto;
     -ms-interpolation-mode: bicubic;
+    image-rendering: -webkit-optimize-contrast;
   }
   
 .screen-reader, .screen-reader-text {

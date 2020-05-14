@@ -3,6 +3,7 @@
 $global-flexbox: true;
 
 @import 'variables';
+@import "global/mixins";
 @import 'util/util';
 @import '../../../node_modules/foundation-sites/scss/vendor/normalize';
 
@@ -16,7 +17,10 @@ $global-flexbox: true;
 // @import 'layouts/testilist';
 // @import 'layouts/footergrid';
 @import 'components/menus';
-// @import 'components/hero';
+@import 'components/hero';
+@import 'components/chat';
+@import 'components/details';
+@import 'components/featcard';
 // @import 'components/btn';
 // @import 'components/callout';
 // @import 'components/testicard';
@@ -25,8 +29,8 @@ $global-flexbox: true;
 
 // @charset 'utf-8';
 
-// @import 'settings';
-// @import 'foundation';
+@import 'settings';
+@import 'foundation';
 // @import 'motion-ui';
 
 // // Global styles
@@ -61,7 +65,7 @@ $global-flexbox: true;
 // @include foundation-accordion;
 // @include foundation-media-object;
 // @include foundation-orbit;
-// @include foundation-responsive-embed;
+@include foundation-responsive-embed;
 // @include foundation-tabs;
 // @include foundation-thumbnail;
 // // Menu-based containers

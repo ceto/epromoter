@@ -5,13 +5,32 @@ $fw-bold: 600;
 $fw-normal: 400;
 $fw-light: 200;
 
-$global-width: 90rem;
 
+// Colors
 $white: #fefefe;
 $black: #1b1b1b;
-
-
 $cl-primary: #4ebaeb;
 $cl-secondary: #5c34a6;
 $cl-gray-xlight: #f4f2f8;
 $cl-gray-light: #dbdadf;
+$cl-body-font-color: $black;
+
+
+// Layout / Grid
+$layout-col-count: 12;
+$layout-col-width: 96px;
+$layout-gutter-width: 24px;
+$layout-content: ($layout-col-count * $layout-col-width) + (($layout-col-count - 1) * $layout-gutter-width);
+$layout-gutter-pct: percentage($layout-gutter-width / $layout-content);
+
+$global-width: $layout-content;
+
+// Breakpoints
+$bp-medium: 375px;
+$bp-tablet: 768px;
+$bp-large: 1024px;
+$bp-xlarge: 1280px;
+$bp-xxlarge: 1440px;
+$bp-xxxlarge: 1920px;
+
+$bp-bigdesktop: 1560px;

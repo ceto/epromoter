@@ -1,0 +1,74 @@
+.howtowrap {
+    background-color: $white;
+    color:$black;
+}
+
+
+.askpreziwrap {
+    background-color: $white;
+    color:$black;
+}
+.details {
+    // color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    @include breakpoint($bp-tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+.details__head {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: calc(2vw + .5rem);
+    p {
+        font-size:1.5rem;
+        font-weight: $fw-black;
+        margin:0;
+    }
+}
+
+.details__ill {
+    flex-basis: 50%;
+    margin: 0 0;
+    text-align: center;
+
+    img {
+        width: 35rem;
+        @include breakpoint($bp-tablet) {
+            max-width: 100%;
+        }
+    }
+    
+}
+
+
+.details__content {
+    flex-basis: 50%;
+    &.big {
+        flex-basis: 70%;
+    }
+
+    &.small {
+        flex-basis: 38%;
+        
+    }
+}
+
+.details__foot {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: calc(3vw + 1rem);
+    p {
+        font-size:2rem;
+        color:$cl-secondary;
+        font-weight: $fw-black;
+        margin:0 auto;
+        max-width: 17em;
+        line-height: 1.2;
+    }
+}

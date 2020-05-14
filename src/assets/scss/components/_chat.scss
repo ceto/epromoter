@@ -1,0 +1,85 @@
+.chatwrap {
+    background-color: #fff;
+    color:$black;
+}
+
+.chatlist {
+    list-style: none;
+    margin:0 auto;
+    font-size: 1.125em;
+    max-width: 42em;
+    padding:0;
+
+    @include breakpoint($bp-large) {
+        font-size: 1.25rem;
+    }
+    > li {
+        margin:0;
+        padding:0;
+        display: flex;
+        
+        &:not(:last-child) {
+            margin-bottom:1.25em;
+        }
+
+        &.var {
+            justify-content: flex-end;
+        }
+    }
+
+}
+.chatcard {
+    position: relative;
+    background-color: $cl-secondary;
+    color: $white;
+    
+    // display: inline-block;
+    max-width: 27em;
+    margin:0 2.5em;
+
+    
+    border-radius:  .5rem 1rem 1rem 1rem;
+    padding:.75em .875em;
+
+    &:before {
+        content:'';
+        position: absolute;
+        top:-1em;
+        left:-2.5em;
+        // background-color: $cl-gray-light;
+        width:2em;
+        height:2em;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+        background-image: url(../img/heroill.png);
+    }
+    
+    .var & {
+        border-radius:  1rem .5rem 1rem 1rem;
+        background-color: $cl-gray-light;;
+        color:$black;
+        &:before {
+            left:auto;
+            right:-2.5em;
+            // background-image: url(../img/logo.svg);
+        }
+        
+    }
+
+    p {
+        font-weight: $fw-bold;
+        line-height: 1.4;
+
+        
+        margin:0 0 .125em;
+    }
+
+    .button {
+        margin-top:1em
+    }
+
+    > *:last-child() {
+        margin-bottom: 0;
+    }
+}

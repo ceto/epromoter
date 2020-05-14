@@ -1,0 +1,39 @@
+.featurewrap {
+    background-image: linear-gradient(180deg, rgba(#fff,.025) 10%, transparent 90%);
+    // color:$black;
+}
+.featurelist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin:0 auto;
+    padding:0;
+
+    > li {
+        margin:0;
+        padding:0;
+        flex-basis: 20rem;
+        flex-grow: 1;
+    }
+}
+.featcard {
+    padding:1.5em 1em;
+    text-align: center;
+    font-size: 1.25rem;
+
+
+    img {
+        width: 14em;
+        margin-bottom: 1em;
+    }
+    p {
+        font-size: 1.25em;
+        font-weight: $fw-light;
+        line-height: 1.2;
+        strong {
+            font-size: 150%;
+            font-weight: $fw-black;
+        }
+    }
+}

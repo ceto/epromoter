@@ -1,19 +1,23 @@
 
-    <section class="home__intro pagewrap">
+    <section class="herowrap pagewrap">
         <div class="hero">
-            <img src="{{root}}assets/img/heroill.png" alt="ePromóter - értékesítő minden látogató mellé">
-            <h1>ePromóter</h1>
-            <p>Állíts értékesítőt minden látogató mellé a weboldaladon!</p>
+            <figure class="hero__fig">
+                <img src="{{root}}assets/img/heroill.png" alt="ePromóter - értékesítő minden látogató mellé">
+            </figure>
+            <div class="hero__content">
+                <h2 class="hero__title">ePromoter</h2>
+                <p class="hero__lead">Állíts értékesítőt minden látogató mellé a weboldaladon!</p>
+            </div>
         </div>
     </section>
-    <section id="home__chat" class="home__chat pagewrap">
+    <section id="home__chat" class="chatwrap pagewrap">
         <ul class="chatlist">
             <li>
                 <div class="chatcard">
                     <p>Biztosan te is érzed, hogy weboldalad forgalmából több üzletet is ki lehetne hozni.</p>
                 </div>
             </li>
-            <li>
+            <li class="var">
                 <div class="chatcard">
                     <p>De hogyan?</p>
                     <p>Nem lehet minden látogató mellé értékesítőt tenni!</p>
@@ -28,13 +32,13 @@
                 <div class="chatcard">
                     <p>Van személyes értékesítési tudás a cégben? Itt az ideje, digitalizálni azt!</p>
                     <p><strong>Lépj velünk kapcsolatba!</strong></p>
-                    <p><a class="btn" href="#">Kapcsolat</a></p>
+                    <p><a class="button" href="#">Kapcsolat</a></p>
                 </div>
             </li>
         </ul>
     </section>
-    <section class="home__details details pagewrap">
-        <header class="details__head"><h2>Hogyan növeli a konverziót az <span>ePromoter?</span></h2></header>
+    <section class="howtowrap details pagewrap light">
+        <header class="details__head"><h2 class="sectitle">Hogyan növeli a konverziót az <span>ePromoter?</span></h2></header>
         <div class="details__content">
             <ul class="bulletlist">
                 <li>Pro-aktívan megszólítja a látogatót</li>
@@ -45,39 +49,59 @@
             </ul>
         </div>
         <figure class="details__ill">
-            <img src="{{root}}assets/img/illustration-stay-productive.png" alt="Hogyan növeli a konverziót illustration">
+            <img src="{{root}}assets/img/heroill.png" alt="Hogyan növeli a konverziót illustration">
         </figure>
     </section>
 
-    <section id="home__features" class="home__features pagewrap">
+    <section class="whywrap details pagewrap">
+        <header class="details__head"><h2 class="sectitle">Miért jó az <span>ePromoter?</span></h2></header>
+        <div class="details__content big">
+            <ul class="bulletlist">
+                <li>Cégre, illetve weboldalra szabott, egyedi megoldások alakíthatóak ki</li>
+                <li>Az ePromoter teljesen integrálható a szükséges rendszerekhez (CRM, ERP, stb.)</li>
+                <li>Önálló csatornaként üzemel, nincsen kitéve egy platformtól való függőségnek (pl.: Facebook)</li>
+                <li>Gyorsabban és rugalmasabban adaptálható új igényekhez, mintha a weboldalt kellene módosítani</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="featurewrap pagewrap">
         <ul class="featurelist">
             <li>
                 <div class="featcard">
-                    <img src="{{roots}}assets/img/icon-access-anywhere.svg" alt="">
+                    <img src="{{root}}assets/img/heroill.png" alt="">
                     <p><strong>4</strong><br />országban</p>
                 </div>
             </li>
             <li>
                 <div class="featcard">
-                    <img src="{{roots}}assets/img/icon-security.svg" alt="">
+                    <img src="{{root}}assets/img/heroill.png" alt="">
                     <p>több, mint<br /><strong>100 000</strong><br />értékesítési beszélgetés</p>
                 </div>
             </li>
             <li>
                 <div class="featcard">
-                    <img src="{{roots}}assets/img/icon-collaboration.svg" alt="">
+                    <img src="{{root}}assets/img/heroill.png" alt="">
                     <p>a weboldal látogatók szerint<br /><strong>5-ből 4,2-es</strong><br />minősítésű szolgáltatás</p>
                 </div>
             </li>
         </ul>
     </section>
 
-    <section class="home__outro details pagewrap">
+    <section class="videowrap pagewrap light">
+        <div class="narrowwrap">
+            <div class="responsive-embed">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/52pzyeFtaWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <section class="askpreziwrap details pagewrap">
         <header class="details__head">
-            <h2>Kérj egy bemutatkozó prezit tőlünk!</h2>
+            <h2 class="sectitle">Kérj egy bemutatkozó prezit tőlünk!</h2>
             <p>Személyesen vagy webinar formájában ezekről lesz szó:</p>
         </header>
-        <div class="details__content">
+        <div class="details__content small">
             <ul class="bulletlist">
                 <li>Mik a sikeres projektek titkai?</li>
                 <li>Milyen üzleti hatás várható el egy ilyen projekttől?</li>
@@ -90,41 +114,6 @@
         </footer>
     </section>
 
-    <section id="home__testimonials" class="home__testimonials pagewrap">
-        <ul class="testilist">
-            <li>
-                <blockquote class="testicard">
-                    <p>Fylo ipsum longer text. has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-                    <cite>
-                        <img src="{{root}}assets/img/profile-1.jpg" alt="">
-                        Satish Patel
-                        <span>Founder & CEO, Huddle</span>
-                    </cite>
-                </blockquote>
-            </li>
-            <li>
-                <blockquote class="testicard">
-                    <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine. Lorem ipsum longer text.</p>
-                    <cite>
-                        <img src="{{root}}assets/img/profile-2.jpg" alt="">
-                        Bruce McKenzie
-                        <span>Founder & CEO, Lorem</span>
-                    </cite>
-                </blockquote>
-            </li>
-            <li>
-                <blockquote class="testicard">
-                    <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-                    <cite>
-                        <img src="{{root}}assets/img/profile-3.jpg" alt="">
-                        Iva Boyd
-                        <span>Owner, Huddle Ltd.</span>
-                    </cite>
-                </blockquote>
-            </li>
-        </ul>
-
-    </section>
     <section id="home__cta" class="home__cta pagewrap">
         <div class="callout">
             <h2>Get early access today</h2>

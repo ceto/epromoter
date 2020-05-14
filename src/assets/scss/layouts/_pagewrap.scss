@@ -1,3 +1,4 @@
+
 .pagewrap {
     //max-width: 90%;
     //border:1px solid red;
@@ -19,4 +20,15 @@
             padding-right: 5%;
         }   
     }
+
+    &.light {
+        background-color: $cl-gray-xlight;
+    }
 }
+
+.narrowwrap {
+    max-width: 50rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+
