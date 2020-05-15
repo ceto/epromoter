@@ -114,13 +114,61 @@
         </footer>
     </section>
 
-    <section id="home__cta" class="home__cta pagewrap">
-        <div class="callout">
+    <section class="thecontactwrap pagewrap">
+        <div class="narrowwrap">
+            <h1 class="sectitle">Ready to <span>Get Started</span></h1>
+            <p class="lead text-center">Give us a call at +375 700 4438 or fill out the form below and we’ll get back to you within a business day.</p>
+            <form class="contactform" data-abide novalidate>
+                <p data-abide-error class="abide-formerror" style="display: none;">
+                    There are some errors in your form.
+                </p>
+                <ul class="formsteps">
+                <li class="formstep">
+                <label class="smartlabel">
+                    <span class="smartlabel__text">Full name*</span>
+                    <input type="text" placeholder="Full name*" required>
+                    <span class="form-error">
+                        Name is required!
+                    </span>
+                </label>
+                </li>
+                <li class="formstep">
+                <label class="smartlabel">
+                    <span class="smartlabel__text">E-mail address*</span>
+                    <input type="email" id="password" placeholder="E-mail address*" required pattern="email">
+                    <span class="form-error">
+                        E-mail is required!
+                    </span>
+                </label>
+                </li>
+                <li class="formstep">
+                <label class="smartlabel">
+                    <span class="smartlabel__text">Phone*</span>
+                    <input type="email" id="password" placeholder="Phone*" required >
+                    <span class="form-error">
+                        Phone is required!
+                    </span>
+                </label>
+                </li>
+                <li class="formstep">
+                <label class="smartlabel">
+                    <span class="smartlabel__text">How can we help?</span>
+                    <textarea name="message" id="" rows="4" placeholder="How can we help?"></textarea>
+                </label>
+                </li>
+                <li class="formstep">
+                <button class="button large expanded" type="submit">Küldés</button>
+                </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+
+    <section class="nlswrap pagewrap">
             <h2>Get early access today</h2>
             <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
             <form action="#">
                 <input type="email" placeholder="email@example.com">
-                <button type="submit" class="btn">Get Started For Free</button>
+                <button type="submit" class="button">Get Started For Free</button>
             </form>
-        </div>
     </section>

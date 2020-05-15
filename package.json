@@ -5,7 +5,8 @@
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --production"
+    "build": "gulp build --production",
+    "deploy": "gulp deploy --production"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
@@ -22,6 +23,7 @@
     "autoprefixer": "^9.1.5",
     "babel-loader": "^8.0.4",
     "browser-sync": "^2.10.0",
+    "gh-pages": "^2.2.0",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^3.3.1",
