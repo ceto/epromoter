@@ -36,3 +36,10 @@
 .nlswrap {
     background-color: darken($cl-secondary,30%);
 }
+
+.howtowrap {
+    mask-image: url(../img/curvy.svg), linear-gradient(-180deg, transparent 0, transparent 2rem, #000 2rem, #000 100%);
+    mask-repeat: no-repeat;
+    mask-size: 150rem 2.125rem, 100% 100%;
+    mask-position: center bottom, center bottom 2rem;
+}

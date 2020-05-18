@@ -1,6 +1,13 @@
 .chatwrap {
     background-color: #fff;
     color:$black;
+    padding-top: 10rem;
+    margin-top:-5rem;
+
+    mask-image: url(../img/bg-curvy-desktop.svg), linear-gradient(90deg, #000, #000);
+    mask-repeat: no-repeat;
+    mask-size: 200rem 20rem, 100% 100%;
+    mask-position: center top, center 20rem;
 }
 
 .chatlist {
@@ -48,11 +55,13 @@
         left:-2.5em;
         // background-color: $cl-gray-light;
         width:2em;
-        height:2em;
+        height:2.5em;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% auto;
-        background-image: url(../img/heroill.png);
+        background-image: url(../img/chatbubi-a.svg);
+        filter: hue-rotate(-127deg) brightness(.9) ;
+        // filter: brightness(0.25);
     }
     
     .var & {
@@ -62,7 +71,7 @@
         &:before {
             left:auto;
             right:-2.5em;
-            // background-image: url(../img/logo.svg);
+            background-image: url(../img/chatbubi-b.svg);
         }
         
     }

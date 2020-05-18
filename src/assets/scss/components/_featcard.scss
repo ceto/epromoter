@@ -1,6 +1,13 @@
 .featurewrap {
-    background-image: linear-gradient(180deg, rgba(#fff,.025) 10%, transparent 90%);
+    background-image: linear-gradient(180deg, rgba(#fff,.0333) 10%, transparent 90%);
     // color:$black;
+
+    padding-top: 10rem;
+    margin-top:-5rem;
+    mask-image: url(../img/bg-curvy-desktop.svg), linear-gradient(90deg, #000, #000);
+    mask-repeat: no-repeat;
+    mask-size: 150rem 20rem, 100% 100%;
+    mask-position: center top, center 20rem;
 }
 .featurelist {
     display: flex;
@@ -24,7 +31,8 @@
 
 
     img {
-        width: 14em;
+        width: 10em;
+        max-height: 8em;
         margin-bottom: 1em;
     }
     p {

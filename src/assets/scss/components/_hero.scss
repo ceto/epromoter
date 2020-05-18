@@ -1,7 +1,24 @@
 .herowrap.pagewrap {
+    position: relative;
     padding-top:0;
     // padding-bottom: 0;
 
+    &:before {
+        content: '';
+        background-image: linear-gradient(180deg, rgba(#fff,.075) 20%, transparent 100%);
+        display: block;
+        position: absolute;
+        z-index: -1;
+        left:0;
+        bottom: 0;
+        width:100%;
+        height: 7rem;
+
+        mask-image: url(../img/bg-curvy-desktop.svg);
+        mask-repeat: no-repeat;
+        mask-size: 200% 7rem;
+        mask-position: -100vw bottom;
+    }
 }
 
 .hero {
