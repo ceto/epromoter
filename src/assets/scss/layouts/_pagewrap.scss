@@ -37,9 +37,28 @@
     background-color: darken($cl-secondary,30%);
 }
 
-.howtowrap {
-    mask-image: url(../img/curvy.svg), linear-gradient(-180deg, transparent 0, transparent 2rem, #000 2rem, #000 100%);
-    mask-repeat: no-repeat;
-    mask-size: 150rem 2.125rem, 100% 100%;
-    mask-position: center bottom, center bottom 2rem;
+.howtowrap, .videowrap {
+    margin-top:-2rem;
+    mask-image: url(../img/rectbig.svg);
+    mask-repeat: repeat-x;
+    mask-size: auto 100%;
+    mask-position: center center;
+}
+
+.videowrap {
+    margin-bottom: -2rem;
+    // z-index: 1;
+    position: relative;
+    
+}
+
+
+.askpreziwrap {
+    // margin-top:-2rem;
+    // position: relative;
+    // z-index: ;
+    mask-image: url(../img/rectarrow.svg);
+    mask-repeat: repeat-x;
+    mask-size: auto 120vw;
+    mask-position: center bottom;
 }

@@ -10,10 +10,23 @@
     &__navblock {
         //margin-left:auto;
     }
+
+    
 }
 
+footer.siteheader {
+    background-color: darken($cl-secondary, 30%);
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+
+
 .sitelogo {
-display: block;
+   display: block;
    max-width: calc(6rem + 4.5vw);
+   footer.siteheader & {
+    max-width: 5rem;
+   }
 
 }
