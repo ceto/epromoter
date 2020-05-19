@@ -1,6 +1,6 @@
 .herowrap.pagewrap {
     position: relative;
-    padding-top:0;
+    // padding-top:0;
     // padding-bottom: 0;
 
     &:before {
@@ -25,24 +25,31 @@
     // color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    min-height: 34rem;
    
     @include breakpoint($bp-tablet) {
         flex-direction: row;
         align-items: center;
+        height: 30vw;
+        min-height: 25rem;
     }
 }
 .hero__fig {
     flex-basis: 100%;
     margin: 0 0;
     text-align: center;
+    // max-width: 50%;
     @include breakpoint($bp-tablet) {
         order:2;
+        max-width: 50%;
     }
 
     img {
-        width: 35rem;
+        width: 30rem;
         @include breakpoint($bp-tablet) {
-            max-width: 100%;
+            max-width:none;
+            width: calc(35rem + 7vw);
         }
     }
 }

@@ -69,6 +69,18 @@ label {
     line-height: 1.6;
 }
 
+[type="checkbox"] + span, [type="radio"] + span {
+    text-transform: none;
+    font-weight: $fw-normal;
+    font-size: .9375em;
+    line-height: 1.2;
+    margin-top: .333em;
+    display: block;
+    float: right;
+    max-width: calc(100% - 1.5em);
+    margin-bottom: 2em;
+}
+
 .form-error {
     font-weight: $fw-normal;
     text-transform: none;
