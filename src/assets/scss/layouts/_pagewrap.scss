@@ -9,13 +9,13 @@
     padding-top: calc(3rem + 2.5vw);
     padding-bottom: calc(3rem + 2.5vw);
     width: 100%;
-    @include breakpoint(100em) {
+    @include breakpoint(80em) {
         padding-left: calc(50vw - #{$global-width/2});
         padding-right: calc(50vw - #{$global-width/2});
     }
 
     &--full {
-        @include breakpoint(100em) {
+        @include breakpoint(80em) {
             padding-left: 5%;
             padding-right: 5%;
         }   

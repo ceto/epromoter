@@ -1,14 +1,14 @@
 html {
     box-sizing: border-box;
     font-size: $global-font-size;
-    @include breakpoint(60em) {
-        font-size: 15px;
-    }
+    // @include breakpoint(60em) {
+    //     font-size: 15px;
+    // }
     @include breakpoint(80em) {
         font-size: 16px;
     }
     @include breakpoint(120em) {
-        font-size: 17px;
+        // font-size: 17px;
     }
 }
 
@@ -18,7 +18,6 @@ html {
 *::after {
     box-sizing: inherit;
 }
-
 
 body {
     position: relative;

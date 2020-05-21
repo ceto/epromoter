@@ -18,8 +18,8 @@ $cl-body-font-color: $black;
 
 // Layout / Grid
 $layout-col-count: 12;
-$layout-col-width: 96px;
-$layout-gutter-width: 24px;
+$layout-col-width: 72px;
+$layout-gutter-width: 20px;
 $layout-content: ($layout-col-count * $layout-col-width) + (($layout-col-count - 1) * $layout-gutter-width);
 $layout-gutter-pct: percentage($layout-gutter-width / $layout-content);
 
