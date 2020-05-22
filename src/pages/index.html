@@ -125,48 +125,54 @@
                     Hiba az űrlapon
                 </p>
                 <ul class="formsteps">
-                <li class="formstep">
-                <label class="smartlabel">
-                    <span class="smartlabel__text">Teljes név*</span>
-                    <input type="text" placeholder="Add meg nevedet" required>
-                    <span class="form-error">
-                        Megadása kötelező!
-                    </span>
-                </label>
-                </li>
-                <li class="formstep">
-                <label class="smartlabel">
-                    <span class="smartlabel__text">E-mail cím*</span>
-                    <input type="email" id="password" placeholder="E-mail cím*" required pattern="email">
-                    <span class="form-error">
-                        Megadása kötelező!
-                    </span>
-                </label>
-                </li>
-                <li class="formstep">
-                <label class="smartlabel">
-                    <span class="smartlabel__text">Telefonszám*</span>
-                    <input type="email" id="password" placeholder="Telefonszám*" required >
-                    <span class="form-error">
-                        Megadása kötelező!
-                    </span>
-                </label>
-                </li>
-                <li class="formstep">
-                <label class="smartlabel">
-                    <span class="smartlabel__text">Üzenet</span>
-                    <textarea name="message" id="" rows="4" placeholder="Üzenet"></textarea>
-                </label>
-                </li>
-                <li class="formstep">
-                    <label class="smartlabel">
-                        <input type="checkbox" id="acceptgdpr" required >
-                        <span class="smartlabel__text">Elolvastam és megértettem a további és részletes tájékoztatást tartalmazó <a href="#">Adatvédelmi szabályzatot</a> és egyetértek vele.</span>
-                    </label>
-                </li>
-                <li class="formstep">
-                <button class="button large expanded" type="submit">Üzenet küldése</button>
-                </li>
+                    <div class="formleft">
+                        <li class="formstep">
+                        <label class="smartlabel">
+                            <span class="smartlabel__text">Név*</span>
+                            <input type="text" placeholder="NÉV" required>
+                            <span class="form-error">
+                                Megadása kötelező!
+                            </span>
+                        </label>
+                        </li>
+                        <li class="formstep">
+                        <label class="smartlabel">
+                            <span class="smartlabel__text">E-mail cím*</span>
+                            <input type="email" id="password" placeholder="E-MAIL*" required pattern="email">
+                            <span class="form-error">
+                                Megadása kötelező!
+                            </span>
+                        </label>
+                        </li>
+                        <li class="formstep">
+                        <label class="smartlabel">
+                            <span class="smartlabel__text">Telefonszám</span>
+                            <input type="email" id="password" placeholder="TELEFONSZÁM" >
+                            <span class="form-error">
+                                Megadása kötelező!
+                            </span>
+                        </label>
+                        </li>
+                    </div>
+                    <div class="formright">
+                        <li class="formstep">
+                        <label class="smartlabel">
+                            <span class="smartlabel__text">Üzenet</span>
+                            <textarea name="message" id="" rows="9" placeholder="Üzenet"></textarea>
+                        </label>
+                        </li>
+                    </div>
+                    <div class="formfull">
+                        <li class="formstep">
+                            <label class="smartlabel">
+                                <input type="checkbox" id="acceptgdpr" required >
+                                <span class="smartlabel__text">Elolvastam és megértettem a további és részletes tájékoztatást tartalmazó <a href="#">Adatvédelmi szabályzatot</a> és egyetértek vele.</span>
+                            </label>
+                        </li>
+                        <li class="formstep">
+                        <button class="button large expanded" type="submit">Üzenet küldése</button>
+                        </li>
+                    </div>
                 </ul>
             </form>
         </div>

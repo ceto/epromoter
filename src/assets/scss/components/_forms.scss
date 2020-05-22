@@ -47,10 +47,12 @@ textarea {
 
 :-ms-input-placeholder {
     color: $cl-gray-xlight;
+    font-weight: $fw-black;
 }
 
 ::placeholder {
     color: $cl-gray-xlight;
+    font-weight: $fw-black;
 }
 
 fieldset {
@@ -74,28 +76,53 @@ label {
     font-weight: $fw-normal;
     font-size: .9375em;
     line-height: 1.2;
-    margin-top: .333em;
+    // margin-top: -1.05rem;
     display: block;
-    float: right;
-    width: calc(100% - 1.5em);
-    margin-bottom: 2em;
+    margin-bottom: 0;
 
 
 }
 
 
 
-[type="checkbox"] + span {
-    &:before {
-        content:'';
-        display: inline-block;
-        width: 1.2em;
-        height:1.2em;
-        background-color: rgba(#fff,.25);
-        border-radius: 4px;
-        border:1px solid rgba(#000,.333);
-        color:#fff;
+[type="checkbox"]  {
+    position: absolute;
+    opacity: 0;
+    + span {
+        &:before {
+            content:'';
+            display: inline-block;
+            float: left;
+            margin-right: .5em;
+            width: 1.2em;
+            height:1.2em;
+            background-color: rgba(#fff,.25);
+            border-radius: 4px;
+            border:1px solid rgba(#000,.333);
+            color:#fff;
+        }
     }
+    &:focus {
+        + span {
+            &:before {
+                border:1px solid rgba(#fff,.25);
+            }
+        }
+    }
+    &:checked {
+        + span {
+            &:before {
+                background-image: url(../img/checkmark.svg);
+                background-repeat: no-repeat;
+                background-size: 66.666% auto;
+                background-position: center;
+            }
+        }
+    }
+}
+
+.smartlabel__text {
+    display: none;
 }
 
 .abide-formerror {
@@ -113,10 +140,37 @@ label {
     text-transform: none;
     font-size: .9375rem;
     display: none;
+    position: absolute;
     &.is-visible {
         display: inline;
     }
 }
+
+.formleft {
+    @include breakpoint($bp-large) {
+        width:48.5%;
+        float:left;
+    }
+}
+.formright {
+    @include breakpoint($bp-large) {
+        width:48.5%;
+        float:right;
+    }
+}
+.formfull {
+    @include breakpoint($bp-large) {
+        clear: both;
+        width:50%;
+        margin:0 auto;
+    }
+    .button{
+        display: block;
+        margin:0 auto;
+    }
+}
+
+
 .formsteps {
     list-style: none;
     margin: 0;
@@ -126,8 +180,9 @@ label {
 .formstep {
     display: block;
     margin: 0 0;
-    padding: .5rem 0;
+    padding: 1.05rem 0;
 }
+
 
 .formstep__title {
     font-size: 1.333rem;
