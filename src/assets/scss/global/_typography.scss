@@ -97,12 +97,12 @@ ul.bulletlist {
     margin:0;
     padding:0;
     list-style: none;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     font-weight: $fw-black;
     line-height: 1.4;
 
-    @include breakpoint($bp-large) {
-        font-size: 1.25rem;
+    @include breakpoint($bp-tablet) {
+        font-size: 1.4333rem;
     }
 
     > li {
@@ -132,7 +132,7 @@ ul.bulletlist {
     color:inherit;
     font-weight: $fw-light;
     line-height: 1.2;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0 0 0;
 
     span {

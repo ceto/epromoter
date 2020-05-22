@@ -1,12 +1,12 @@
 .chatwrap {
     background-color: #fff;
     color:$black;
-    padding-top: 10rem;
-    margin-top:-5rem;
+    padding-top: 17rem;
+    margin-top:-20rem;
 
-    mask-image: url(../img/bg-curvy-desktop.svg), linear-gradient(90deg, #000, #000);
+    mask-image: url(../img/wave-herofront.svg), linear-gradient(90deg, #000, #000);
     mask-repeat: no-repeat;
-    mask-size: 200rem 20rem, 100% 100%;
+    mask-size: 160rem auto, 100% 100%;
     mask-position: center top, center 20rem;
 }
 

@@ -6,12 +6,19 @@
     margin:0 auto;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: calc(3rem + 2.5vw);
-    padding-bottom: calc(3rem + 2.5vw);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     width: 100%;
     @include breakpoint(80em) {
         padding-left: calc(50vw - #{$global-width/2});
         padding-right: calc(50vw - #{$global-width/2});
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    @include breakpoint(100em) {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
     }
 
     &--full {
@@ -38,15 +45,17 @@
 }
 
 .howtowrap, .videowrap {
-    margin-top:-2rem;
-    mask-image: url(../img/rectbig.svg);
-    mask-repeat: repeat-x;
-    mask-size: auto 100%;
-    mask-position: center center;
+    margin-top:-2.5rem;
+    margin-bottom:-2.5rem;
+    // padding-bottom: 8rem;
+    mask-image: url(../img/wave-top-b.svg), url(../img/wave-bottom.svg), linear-gradient(90deg, #000, #000);
+    mask-repeat: no-repeat;
+    mask-size: 160rem auto, 160rem auto, 100% calc(100% - 4.66rem);
+    mask-position: center top, center bottom, center top 2.333rem;
 }
 
 .videowrap {
-    margin-bottom: -2rem;
+    // margin-bottom: -2rem;
     // z-index: 1;
     position: relative;
     
@@ -57,8 +66,8 @@
     // margin-top:-2rem;
     // position: relative;
     // z-index: ;
-    mask-image: url(../img/rectarrow.svg);
-    mask-repeat: repeat-x;
-    mask-size: auto 120vw;
-    mask-position: center bottom;
+    mask-image: url(../img/wave-arrowdown.svg), linear-gradient(90deg, #000, #000);
+    mask-repeat: no-repeat;
+    mask-size: 160rem auto, 100% 100%;
+    mask-position: center bottom, center bottom 3.5rem;
 }
