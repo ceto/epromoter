@@ -51,7 +51,7 @@
     mask-image: url(../img/wave-top-b.svg), url(../img/wave-bottom.svg), linear-gradient(90deg, #000, #000);
     mask-repeat: no-repeat;
     mask-size: 160rem auto, 160rem auto, 100% calc(100% - 4.66rem);
-    mask-position: center top, center bottom, center top 2.333rem;
+    mask-position: center top, center bottom, center 2.333rem;
 }
 
 .videowrap {
@@ -68,6 +68,6 @@
     // z-index: ;
     mask-image: url(../img/wave-arrowdown.svg), linear-gradient(90deg, #000, #000);
     mask-repeat: no-repeat;
-    mask-size: 160rem auto, 100% 100%;
-    mask-position: center bottom, center bottom 3.5rem;
+    mask-size: 160rem auto, 100% calc(100% - 3.5rem);
+    mask-position: center bottom, center top;
 }
