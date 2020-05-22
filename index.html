@@ -21,10 +21,12 @@
         </a>
     </div>
     <div class="siteheader__navblock">
-        <ul class="mainmenu">
-            <li><a href="#home__features">Features</a></li>
-            <li><a href="#home__testimonials">Team</a></li>
-            <li><a href="#home__cta">Sign In</a></li>
+        <ul class="mainmenu" data-magellan>
+            <li><a href="https://vieeye.hu/">Szolgáltatások</a></li>
+            <li class="is-active"><a href="https://vieeye.hu/vieeye-chatbot">Epromoter</a></li>
+            <li><a href="https://vieeye.hu/marketing-blog/">Blog</a></li>
+            <li><a href="https://vieeye.hu/iparagi-referencia/">Referenciák</a></li>
+            <li><a href="#thecontactwrap">Kapcsolat</a></li>
         </ul>
     </div>
 </header>
@@ -62,7 +64,7 @@
                 <div class="chatcard">
                     <p>Van személyes értékesítési tudás a cégben? Itt az ideje, digitalizálni azt!</p>
                     <p><strong>Lépj velünk kapcsolatba!</strong></p>
-                    <p><a class="button" href="#">Kapcsolat</a></p>
+                    <p data-magellan><a class="button" href="#thecontactwrap">Kapcsolat</a></p>
                 </div>
             </li>
         </ul>
@@ -120,8 +122,8 @@
 
     <section class="videowrap pagewrap light">
         <div class="narrowwrap">
-            <div class="responsive-embed">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/52pzyeFtaWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="responsive-embed widescreen">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sKC4ewNTQco" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -131,7 +133,7 @@
             <h2 class="sectitle">Kérj egy bemutatkozó prezit tőlünk!</h2>
             <p>Személyesen vagy webinar formájában ezekről lesz szó:</p>
         </header>
-        <div class="details__content">
+        <div class="details__content bigger">
             <ul class="bulletlist">
                 <li>Mik a sikeres projektek titkai?</li>
                 <li>Milyen üzleti hatás várható el egy ilyen projekttől?</li>
@@ -144,10 +146,12 @@
         </footer>
     </section>
 
-    <section class="thecontactwrap pagewrap">
-        <div class="anarrowwrap">
+    <section id="thecontactwrap" class="thecontactwrap pagewrap" data-magellan-target="thecontactwrap">
+        <div class="narrowwrap">
+            <header class="details__head">
             <h2 class="sectitle">Kapcsolat</h2>
             <p>Küldj üzenetet és hamarosan felvesszük veled a kapcsolatot.</p>
+            </header>
             <form class="contactform" data-abide novalidate>
                 <p data-abide-error class="abide-formerror" style="display: none;">
                     Hiba az űrlapon
@@ -210,11 +214,7 @@
         </a>
     </div>
     <div class="sitefooter__navblock">
-        <ul class="mainmenu">
-            <li><a href="#home__features">Features</a></li>
-            <li><a href="#home__testimonials">Team</a></li>
-            <li><a href="#home__cta">Sign In</a></li>
-        </ul>
+        Copyright &copy; 2020 Vieeye - <a href="#">Impresszum</a>
     </div>
 </footer>
 <script src="assets/js/app.js"></script>
