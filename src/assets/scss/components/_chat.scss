@@ -13,12 +13,12 @@
 .chatlist {
     list-style: none;
     margin:0 auto;
-    font-size: 1.125em;
-    max-width: 42em;
+    font-size: 1.125rem;
+    // max-width: 42em;
     padding:0;
 
-    @include breakpoint($bp-large) {
-        font-size: 1.25rem;
+    @include breakpoint($bp-tablet) {
+        font-size: 1.5666rem;
     }
     > li {
         margin:0;
@@ -78,9 +78,7 @@
 
     p {
         font-weight: $fw-bold;
-        line-height: 1.4;
-
-        
+        line-height: 1.4;        
         margin:0 0 .125em;
     }
 

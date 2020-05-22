@@ -61,7 +61,7 @@
 }
 
 .hero__title {
-    font-size: calc(2rem + 1.5vw);
+    font-size: calc(2.5rem + 1.5vw);
     font-weight: $fw-black;
     line-height: 1.2;
     margin:0;
@@ -72,12 +72,12 @@
         height: .0875em;
         max-width: 2em;
         background-color: currentColor;
-        margin:.5em 0;
+        margin:.125em 0 .25em;
     }
 }
 
 .hero__lead {
-    font-size: calc(1.25rem + .75vw);
+    font-size: calc(1.5rem + .75vw);
     font-weight: $fw-black;
     line-height: 1.2;
     margin:0;
