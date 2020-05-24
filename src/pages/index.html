@@ -120,7 +120,7 @@
             <h2 class="sectitle">Kapcsolat</h2>
             <p>Küldj üzenetet és hamarosan felvesszük veled a kapcsolatot.</p>
             </header>
-            <form class="contactform" data-abide novalidate>
+            <form id="contactform" class="contactform" action="contact_me.php" method="post" data-abide novalidate>
                 <p data-abide-error class="abide-formerror" style="display: none;">
                     Hiba az űrlapon
                 </p>
@@ -129,7 +129,7 @@
                         <li class="formstep">
                         <label class="smartlabel">
                             <span class="smartlabel__text">Név*</span>
-                            <input type="text" placeholder="NÉV" required>
+                            <input type="text" name="name" id="name" placeholder="NÉV" required>
                             <span class="form-error">
                                 Megadása kötelező!
                             </span>
@@ -138,7 +138,7 @@
                         <li class="formstep">
                         <label class="smartlabel">
                             <span class="smartlabel__text">E-mail cím*</span>
-                            <input type="email" id="password" placeholder="E-MAIL*" required pattern="email">
+                            <input type="email" id="email" name="email" placeholder="E-MAIL*" required pattern="email">
                             <span class="form-error">
                                 Megadása kötelező!
                             </span>
@@ -147,7 +147,7 @@
                         <li class="formstep">
                         <label class="smartlabel">
                             <span class="smartlabel__text">Telefonszám</span>
-                            <input type="email" id="password" placeholder="TELEFONSZÁM" >
+                            <input type="text" id="tel" name="tel" placeholder="TELEFONSZÁM" >
                             <span class="form-error">
                                 Megadása kötelező!
                             </span>
@@ -158,14 +158,14 @@
                         <li class="formstep">
                         <label class="smartlabel">
                             <span class="smartlabel__text">Üzenet</span>
-                            <textarea name="message" id="" rows="9" placeholder="Üzenet"></textarea>
+                            <textarea id="text" name="text" id="" rows="9" placeholder="Üzenet"></textarea>
                         </label>
                         </li>
                     </div>
                     <div class="formfull">
                         <li class="formstep">
                             <label class="smartlabel">
-                                <input type="checkbox" id="acceptgdpr" required >
+                                <input type="checkbox" name="acceptgdpr" id="acceptgdpr" required >
                                 <span class="smartlabel__text">Elolvastam és megértettem a további és részletes tájékoztatást tartalmazó <a href="#">Adatvédelmi szabályzatot</a> és egyetértek vele.</span>
                             </label>
                         </li>
