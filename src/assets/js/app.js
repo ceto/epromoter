@@ -62,7 +62,7 @@ $("#contactform").on("submit", function(ev, frm) {
 
     //Ajax post data to server
     $.post(
-      $("#contact_form").attr("action"),
+      $("#contactform").attr("action"),
       post_data,
       function(response) {
         var output = "";
@@ -74,8 +74,8 @@ $("#contactform").on("submit", function(ev, frm) {
           output = '<p class="success">' + response.text + "</p>";
 
           //reset values in all input fields
-          $("#contact_form input").val("");
-          $("#contact_form textarea").val("");
+          $("#contactform input").val("");
+          $("#contactform textarea").val("");
         }
         $("#result")
           .hide()
@@ -93,13 +93,13 @@ $("#contactform").on("submit", function(ev, frm) {
 });
 
 //reset previously set border colors and hide all message on .keyup()
-$("#contact_form input, #contact_form textarea, #contact_form #accept").keyup(function() {
-  //$("#contact_form input, #contact_form textarea").css('border-color', '');
+$("#contactform input, #contactform textarea, #contactform #accept").keyup(function() {
+  //$("#contactform input, #contactform textarea").css('border-color', '');
   $("#result").slideUp();
   $("#formerror").slideUp();
 });
 
-$("#contact_form #accept").on("change", function() {
+$("#contactform #accept").on("change", function() {
   $("#result").slideUp();
   $("#formerror").slideUp();
 });
