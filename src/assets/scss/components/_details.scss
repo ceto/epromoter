@@ -39,8 +39,11 @@
 
     img {
         width: 35rem;
+        margin-top:3rem;
         @include breakpoint($bp-tablet) {
-            max-width: 100%;
+            max-width: 125%;
+            width:125%;
+            margin:1rem 0;
         }
     }
     

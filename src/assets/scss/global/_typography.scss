@@ -132,11 +132,15 @@ ul.bulletlist {
     color:inherit;
     font-weight: $fw-light;
     line-height: 1.2;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0 0 0;
 
     span {
         font-weight: $fw-black;
         color: $cl-primary;
+    }
+
+    @include breakpoint($bp-tablet) {
+        font-size: 3rem;
     }
 }
