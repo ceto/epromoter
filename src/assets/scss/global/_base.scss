@@ -39,8 +39,8 @@ body {
         top:0; left:0;
         width: 100%;
         height: 100%;
-        background-color: $cl-secondary;
-        background-image: linear-gradient(180deg, $cl-secondary 10%, darken($cl-secondary,10%) 90%);
+        background-color: $cl-bglight;
+        background-image: linear-gradient(180deg, $cl-bglight 10%, darken($cl-bgdark,10%) 90%);
     }
 
 }
