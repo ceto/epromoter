@@ -9,9 +9,13 @@
 
 }
 
-
+.siteheader__logoblock {
+    align-self: flex-start;
+}
 
 .sitelogo {
    display: block;
    max-width: calc(6rem + 4.5vw);
+   min-width: 7rem;
+   margin-right: 1rem;
 }
