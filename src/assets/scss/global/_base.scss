@@ -40,7 +40,7 @@ body {
         width: 100%;
         height: 100%;
         background-color: $cl-bglight;
-        background-image: linear-gradient(180deg, $cl-bglight 10%, darken($cl-bgdark,10%) 90%);
+        background-image: linear-gradient(180deg, $cl-bglight 10%, $cl-bgdark 90%);
     }
 
 }

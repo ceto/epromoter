@@ -7,7 +7,7 @@
     text-transform: uppercase;
     font-weight: $fw-black;
     color:$black;
-    > li {
+    li {
         white-space: nowrap;
         + li {
            //padding-left:12%;
@@ -15,6 +15,72 @@
         a {
             display: block;
             padding:.5em .75em;
+            text-decoration: none;
+            &:hover, &:focus {
+                color:$white;
+            }
+
+        }
+        &.is-active {
+            a {
+                color:$cl-primary;
+            }
+        }
+    }
+
+    ul {
+        position: absolute;
+        background-color: rgba($white,.9);
+        margin:0 0 0 0;
+        padding: .75em 0;
+        display: none;
+        flex-wrap: no-wrap;
+        flex-direction: column;
+        // text-transform: none;
+        font-weight: $fw-normal;
+        list-style: none;
+        // font-size: 1.125rem;
+        li {
+            a {
+                padding-right:2em;
+                &:hover, &:focus {
+                    // background-color: $white;
+                    color:$cl-secondary;
+                }
+            }
+        }
+        &:hover, &:focus {
+            display: flex;
+        }
+    }
+
+    li a {
+        &:hover + ul, &:focus + ul  {
+            display: flex;
+        }
+    }
+
+}
+
+.sidemenu {
+    list-style: none;
+    margin:2rem 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-weight: $fw-black;
+    color: $white;
+    li {
+        white-space: nowrap;
+        + li {
+           //padding-left:12%;
+        }
+        a {
+            display: block;
+            padding:.75em 1em;
             text-decoration: none;
 
         }
@@ -24,6 +90,22 @@
             }
         }
     }
+
+    ul {
+        margin:-.25em 0 0 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: no-wrap;
+        flex-direction: column;
+        text-transform: none;
+        font-weight: normal;
+        li {
+            a {
+                padding:.5em 1em .5em 2em;
+            }
+        }
+    }
+
 
 }
 

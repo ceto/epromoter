@@ -6,6 +6,7 @@
     justify-content: space-between;
     position: absolute;
     z-index: 1;
+    overflow: visible;
 
 }
 
@@ -18,4 +19,8 @@
    max-width: calc(6rem + 4.5vw);
    min-width: 7rem;
    margin-right: 1rem;
+}
+
+.menutoggler {
+    @include hamburger($white, $cl-primary, 25px, 20px, 3px, 3);
 }

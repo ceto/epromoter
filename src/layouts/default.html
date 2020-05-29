@@ -14,12 +14,22 @@
   </head>
 <body>
 
-{{> header}}
+
 
 {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-{{> body}}
+<div class="off-canvas-wrapper">
 
-{{> footer}}
+    <div class="off-canvas-content" data-off-canvas-content>
+        {{> header}}
+        {{> body}}
+        {{> footer}}
+    </div>
+    <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+        {{> offcanvas}}
+    </div>
+</div>
+
+
 
 <script src="{{root}}assets/js/app.js"></script>
 </body>

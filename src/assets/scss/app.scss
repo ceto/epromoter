@@ -79,7 +79,7 @@ $global-flexbox: true;
 // @include foundation-dropdown-menu;
 
 // // Layout components
-// @include foundation-off-canvas;
+@include foundation-off-canvas;
 // @include foundation-reveal;
 // @include foundation-sticky;
 // @include foundation-title-bar;
@@ -88,7 +88,7 @@ $global-flexbox: true;
 // // Helpers
 // @include foundation-float-classes;
 // @include foundation-flex-classes;
-// @include foundation-visibility-classes;
+@include foundation-visibility-classes;
 // // @include foundation-prototype-classes;
 
 // // Motion UI
